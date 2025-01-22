@@ -102,14 +102,14 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/MultipleUsers&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="getregoin_data"/>
       <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/GetData&quot;"/>
       <elementValue elementRef="CONSUMES" value="NONE"/>
       <elementValue elementRef="PRODUCES" value="XML-JSON"/>
       <elementValue elementRef="STREAMING" value="false"/>
@@ -120,7 +120,7 @@
     <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:WaOe7l9znppvsW0kPiH1lSpF9DIW9DPZth4lAEUY" show="false"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:ZBVWwhpuQ49kI4UjaZcFXujmAj1m08+lhUFKda+S" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="" show="false"/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" value="" show="false"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -144,9 +144,9 @@
     </metadata>
     <metadata connector="FLOW" label="getregoin_data" name="getregoin_data"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="120">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// Retrieve the global variable holding the attachment headers&#xA;java.util.Map&lt;String, java.util.Map&lt;String, java.util.List&lt;String>>> attachmentHeaders = &#xA;    (java.util.Map&lt;String, java.util.Map&lt;String, java.util.List&lt;String>>>)globalMap.get(&quot;tRESTRequest_1_ATTACHMENT_HEADERS&quot;);&#xA;&#xA;// Initialize the username variable&#xA;String username = &quot;&quot;;&#xA;&#xA;// Check if the global map and the &quot;Username&quot; parameter exist&#xA;if (attachmentHeaders != null &amp;&amp; attachmentHeaders.containsKey(&quot;Username&quot;)) {&#xA;    java.util.Map&lt;String, java.util.List&lt;String>> userHeaders = attachmentHeaders.get(&quot;Username&quot;);&#xA;    if (userHeaders != null &amp;&amp; userHeaders.containsKey(&quot;values&quot;)) {&#xA;        java.util.List&lt;String> usernameList = userHeaders.get(&quot;values&quot;);&#xA;        if (usernameList != null &amp;&amp; !usernameList.isEmpty()) {&#xA;            // Extract the first value of the username&#xA;            username = usernameList.get(0);&#xA;        }&#xA;    }&#xA;}&#xA;&#xA;// Store the extracted username into a context variable&#xA;context.username = username;&#xA;// Example of using the username in your job&#xA;if (&quot;tadmin&quot;.equals(context.username)) {&#xA;    // Logic for user1 (e.g., filter by Mumbai)&#xA;    context.region = &quot;Mumbai&quot;;&#xA;} else if (&quot;pranita&quot;.equals(context.username)) {&#xA;    // Logic for user2 (e.g., filter by Delhi)&#xA;    context.region = &quot;Delhi&quot;;&#xA;} else {&#xA;    // Default or unknown user logic&#xA;    context.region = &quot;Unknown&quot;;&#xA;}&#xA;&#xA;// Proceed with using the region in your processing&#xA;System.out.println(&quot;Username: &quot; + context.username);&#xA;System.out.println(&quot;Region: &quot; + context.region);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="java.util.Map&lt;String, java.util.Map&lt;String, java.util.List&lt;String>>> attachmentHeaders = &#xA;    null;&#xA;&#xA;if (globalMap.get(&quot;tRESTRequest_1_ATTACHMENT_HEADERS&quot;) instanceof java.util.Map) {&#xA;    attachmentHeaders = (java.util.Map&lt;String, java.util.Map&lt;String, java.util.List&lt;String>>>) globalMap.get(&quot;tRESTRequest_1_ATTACHMENT_HEADERS&quot;);&#xA;}&#xA;&#xA;String username = &quot;&quot;;&#xA;&#xA;if (attachmentHeaders != null &amp;&amp; attachmentHeaders.containsKey(&quot;Username&quot;)) {&#xA;    java.util.Map&lt;String, java.util.List&lt;String>> userHeaders = attachmentHeaders.get(&quot;Username&quot;);&#xA;    if (userHeaders != null &amp;&amp; userHeaders.containsKey(&quot;values&quot;)) {&#xA;        java.util.List&lt;String> usernameList = userHeaders.get(&quot;values&quot;);&#xA;        if (usernameList != null &amp;&amp; !usernameList.isEmpty()) {&#xA;            username = usernameList.get(0);&#xA;        } else {&#xA;            System.err.println(&quot;Username list is empty.&quot;);&#xA;        }&#xA;    } else {&#xA;        System.err.println(&quot;No 'values' key found in userHeaders.&quot;);&#xA;    }&#xA;} else {&#xA;    System.err.println(&quot;Attachment headers do not contain 'Username'.&quot;);&#xA;}&#xA;&#xA;context.username = username;&#xA;&#xA;java.util.Map&lt;String, String> userRegionMap = new java.util.HashMap&lt;>();&#xA;userRegionMap.put(&quot;tadmin&quot;, &quot;Mumbai&quot;);&#xA;userRegionMap.put(&quot;pranita&quot;, &quot;Delhi&quot;);&#xA;&#xA;context.region = userRegionMap.getOrDefault(context.username.toLowerCase(), &quot;Unknown&quot;);&#xA;&#xA;System.out.println(&quot;Username: &quot; + context.username);&#xA;System.out.println(&quot;Region: &quot; + context.region);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -170,7 +170,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;pranita_source&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;chirag&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Scj+XzHRd774ZiU6nZOvB0qZK+5mHU/x49sssM2eIa2wQrGuYYEKLN/7sQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:36hdHajk8GTlfUFTPFEG04Zi2e4NeU7ptVggbfhLuf/B3OI/wT88BMkRQw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_RtbWwMHeEe-AfM-FafIoTg - data" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;data&quot;"/>
@@ -178,7 +178,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `data`.`id`, &#xA;  `data`.`name`, &#xA;  `data`.`region`, &#xA;  `data`.`data_info`&#xA; FROM `data` where region=ccontext.region&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `data`.`id`, &#xA;  `data`.`name`, &#xA;  `data`.`region`, &#xA;  `data`.`data_info`&#xA; FROM `data` where `data`.`region` =&quot; + 'context.region' + &quot;;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -274,7 +274,7 @@
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tDBInput_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
