@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_rH_wMP81Ee-3H_k7ABMurA" name="user" dataPackage="_rH_wNP81Ee-3H_k7ABMurA" JSONFilePath="C:/Users/Laptop_User/Downloads/user.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_rH_wMf81Ee-3H_k7ABMurA" LimitBoucle="50" AbsoluteXPathQuery="$">
+      <schemaTargets xmi:id="_rH_wMv81Ee-3H_k7ABMurA" RelativeXPathQuery="password" TagName="password"/>
+      <schemaTargets xmi:id="_rH_wM_81Ee-3H_k7ABMurA" RelativeXPathQuery="user" TagName="user"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_rH_wNP81Ee-3H_k7ABMurA" name="default" dataManager="_rH_wMP81Ee-3H_k7ABMurA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rH_wNf81Ee-3H_k7ABMurA" id="_hm_7EP81Ee-3H_k7ABMurA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rH_wNv81Ee-3H_k7ABMurA" label="password" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rH_wN_81Ee-3H_k7ABMurA" label="user" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
