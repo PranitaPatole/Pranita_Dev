@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_58MnIGCXEfCudIbDkzZvPg" name="Logs" id="_uGmSIGCXEfCudIbDkzZvPg" label="Logs" dataPackage="_6Auh0GCXEfCudIbDkzZvPg" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://98.70.31.45:5432/DPDP Portal?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:ZvIPWexh1eeMBPO+J+jEoxYHKeHl+aEgNY/hIBklf4rLLLuOEeXIP5o=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="DPDP Portal" SqlSynthax="SQL_92" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="Log" supportNLS="false">
+    <taggedValue xmi:id="_58MnIWCXEfCudIbDkzZvPg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_59SzUGCXEfCudIbDkzZvPg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_59SzUWCXEfCudIbDkzZvPg" tag="Status" value=""/>
+    <taggedValue xmi:id="_59SzUmCXEfCudIbDkzZvPg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_59SzU2CXEfCudIbDkzZvPg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_59SzVGCXEfCudIbDkzZvPg" tag="Description" value=""/>
+    <taggedValue xmi:id="_59SzVWCXEfCudIbDkzZvPg" tag="Author" value=""/>
+    <taggedValue xmi:id="_59SzVmCXEfCudIbDkzZvPg" tag="otherParameter"/>
+    <taggedValue xmi:id="_5_P7IGCXEfCudIbDkzZvPg" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_5_P7IWCXEfCudIbDkzZvPg" tag="DB ProductVersion" value="17.4"/>
+    <taggedValue xmi:id="_5_P7ImCXEfCudIbDkzZvPg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_58MnImCXEfCudIbDkzZvPg" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_6Auh0GCXEfCudIbDkzZvPg" name="DPDP Portal" dataManager="_58MnIGCXEfCudIbDkzZvPg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_6Auh0WCXEfCudIbDkzZvPg" name="Log"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

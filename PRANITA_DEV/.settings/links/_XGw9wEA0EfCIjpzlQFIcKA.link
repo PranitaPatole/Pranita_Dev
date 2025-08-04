@@ -1,0 +1,29 @@
+{
+  "itemId" : "_XGw9wEA0EfCIjpzlQFIcKA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_A1TlwD-jEfCIjpzlQFIcKA",
+    "parameterList" : [ {
+      "id" : "_elzaEz-jEfCIjpzlQFIcKA",
+      "name" : "CloudPassword"
+    }, {
+      "id" : "_elzaEj-jEfCIjpzlQFIcKA",
+      "name" : "CloudUser"
+    }, {
+      "id" : "_elyzAD-jEfCIjpzlQFIcKA",
+      "name" : "Host"
+    }, {
+      "id" : "_elyzAj-jEfCIjpzlQFIcKA",
+      "name" : "MSSQL"
+    }, {
+      "id" : "_elyzAT-jEfCIjpzlQFIcKA",
+      "name" : "MySQL"
+    }, {
+      "id" : "_elzaET-jEfCIjpzlQFIcKA",
+      "name" : "Password"
+    }, {
+      "id" : "_elzaED-jEfCIjpzlQFIcKA",
+      "name" : "Postgresql"
+    } ]
+  } ]
+}

@@ -1,0 +1,30 @@
+{
+  "itemId" : "_7qOvcDxqEfC_WOda8ZGOjA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_QUf_EDxrEfC_WOda8ZGOjA",
+    "parameterList" : [ {
+      "id" : "_ejrakDxrEfC_WOda8ZGOjA",
+      "name" : "Host"
+    }, {
+      "id" : "_ejrakTxrEfC_WOda8ZGOjA",
+      "name" : "MSSQL_User"
+    }, {
+      "id" : "_ejrakjxrEfC_WOda8ZGOjA",
+      "name" : "Password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_phxz8Dx4EfC_WOda8ZGOjA",
+    "parameterList" : [ {
+      "id" : "_gvOjwjx5EfC_WOda8ZGOjA",
+      "name" : "Stewardship_Password"
+    }, {
+      "id" : "_gvOjwDx5EfC_WOda8ZGOjA",
+      "name" : "Stewardship_URL"
+    }, {
+      "id" : "_gvOjwTx5EfC_WOda8ZGOjA",
+      "name" : "Stewardship_UserName"
+    } ]
+  } ]
+}

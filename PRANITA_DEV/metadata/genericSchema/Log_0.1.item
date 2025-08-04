@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_g5ooUG-PEfCRSIeNRvbCRA" comment="connectionComment" label="connectionLabel" dataPackage="_g5ooUW-PEfCRSIeNRvbCRA" mappingTypeUsed="true" mappingTypeId="id_MSSQL"/>
+  <TalendMetadata:GenericPackage xmi:id="_g5ooUW-PEfCRSIeNRvbCRA" dataManager="_g5ooUG-PEfCRSIeNRvbCRA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_g5ooUm-PEfCRSIeNRvbCRA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooU2-PEfCRSIeNRvbCRA" name="consent_expirydate" id="11612" label="consent_expirydate" length="30" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_g5ooVG-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooVW-PEfCRSIeNRvbCRA" name="consent_startdate" id="11613" label="consent_startdate" length="30" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_g5ooVm-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooV2-PEfCRSIeNRvbCRA" name="consent_status" id="11614" label="consent_status" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_g5ooWG-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooWW-PEfCRSIeNRvbCRA" name="customer_id" id="11615" label="customer_id" length="30" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_g5ooWm-PEfCRSIeNRvbCRA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooW2-PEfCRSIeNRvbCRA" name="email" id="11616" label="email" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_g5ooXG-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooXW-PEfCRSIeNRvbCRA" name="first_name" id="11617" label="first_name" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_g5ooXm-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooX2-PEfCRSIeNRvbCRA" name="last_name" id="11618" label="last_name" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_g5ooYG-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooYW-PEfCRSIeNRvbCRA" name="phone" id="11619" label="phone" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_g5ooYm-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooY2-PEfCRSIeNRvbCRA" name="Request" id="11620" label="Request" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_g5ooZG-PEfCRSIeNRvbCRA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g5ooZW-PEfCRSIeNRvbCRA" name="RequestTime" id="26916" label="RequestTime" length="30" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_g5ooZm-PEfCRSIeNRvbCRA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

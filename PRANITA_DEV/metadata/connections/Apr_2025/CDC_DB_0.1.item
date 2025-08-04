@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_W_OIoGhzEfC9v94k_mADPg" name="CDC_DB" id="_LAnBkGhzEfC9v94k_mADPg" label="CDC_DB" dataPackage="_XEaxsGhzEfC9v94k_mADPg" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.31.45:1433;DatabaseName=CDC_RetailDB;" dbVersionString="MSSQL_PROP" Port="1433" Username="admin" Password="enc:system.encryption.key.v1:OZsokTI75qDmPp7YaoFWujRkpDf2WcUJcqlY7PUL0k+VSqmzX3i5a3g=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="CDC_RetailDB" SqlSynthax="SQL_92" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+    <taggedValue xmi:id="_W_OIoWhzEfC9v94k_mADPg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_XAnPwGhzEfC9v94k_mADPg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_XBPh4GhzEfC9v94k_mADPg" tag="Status" value=""/>
+    <taggedValue xmi:id="_XBPh4WhzEfC9v94k_mADPg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_XBPh4mhzEfC9v94k_mADPg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_XBPh42hzEfC9v94k_mADPg" tag="Description" value=""/>
+    <taggedValue xmi:id="_XBPh5GhzEfC9v94k_mADPg" tag="Author" value=""/>
+    <taggedValue xmi:id="_XBPh5WhzEfC9v94k_mADPg" tag="otherParameter"/>
+    <taggedValue xmi:id="_XCDaMGhzEfC9v94k_mADPg" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_XCDaMWhzEfC9v94k_mADPg" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_XCDaMmhzEfC9v94k_mADPg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_W_OIomhzEfC9v94k_mADPg" key="CONN_PARA_KEY_USERNAME" value="admin"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_XEaxsGhzEfC9v94k_mADPg" name="CDC_RetailDB" dataManager="_W_OIoGhzEfC9v94k_mADPg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_XEaxsWhzEfC9v94k_mADPg" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

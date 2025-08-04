@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedItems id="_GX3jUBOZEfC7seMLi8h1Ow" path="Apr_2025" type="METADATA_CONNECTIONS"/>
-  <deletedItems id="_rbBLUMc5Ee-hLPUODJ4jUg" path="Authetication" type="PROCESS"/>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Renew/Jun_2025</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Renew/Jun_2025/DPDP_END_TO_END</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Renew/Jun_2025/DPDP_END_TO_END/Consent_Portal</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Renew/Jun_2025/DPDP_END_TO_END/Consent_Portal/Renewal_Jay</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw/NewFlow/DPDP_END_TO_END</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw/NewFlow/DPDP_END_TO_END/Consent_Portal</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw/NewFlow/DPDP_END_TO_END/Consent_Portal/Withdraw</deletedFolders>
+  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw/NewFlow/DPDP_END_TO_END/Consent_Portal/Withdraw/NewFlow</deletedFolders>
+  <deletedItems id="_Htf5QEKbEfCfWcKOMBaZIQ" path="DPDP_END_TO_END/Consent_Portal" type="PROCESS"/>
+  <deletedItems id="_U13oMENgEfCfWcKOMBaZIQ" path="DPDP_END_TO_END/Consent_Portal" type="PROCESS"/>
+  <deletedItems id="_U4O_sENgEfCfWcKOMBaZIQ" path="DPDP_END_TO_END/Consent_Portal" type="PROCESS"/>
+  <deletedItems id="_A-pnQFfGEfCnBp1xqvZgsA" path="DPDP_END_TO_END/Consent_Portal/Renew" type="PROCESS"/>
+  <deletedItems id="_F97HoFJ2EfCyucN3-9uzig" path="DPDP_END_TO_END/Consent_Portal/Renew" type="PROCESS"/>
+  <deletedItems id="_x9c7gESWEfCfWcKOMBaZIQ" path="DPDP_END_TO_END/Consent_Portal/Renew" type="PROCESS"/>
+  <deletedItems id="_IMsh8FApEfC4ZuKDeZl3GA" path="DPDP_END_TO_END/Consent_Portal/Withdraw/BatchWithdraw" type="PROCESS"/>
+  <deletedItems id="_C4_MoFApEfC4ZuKDeZl3GA" path="DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw" type="PROCESS"/>
+  <deletedItems id="_FUygsFApEfC4ZuKDeZl3GA" path="DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw" type="PROCESS"/>
+  <deletedItems id="__qZJsFAoEfC4ZuKDeZl3GA" path="DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw" type="PROCESS"/>
+  <deletedItems id="_zbhZEFAoEfC4ZuKDeZl3GA" path="DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw" type="PROCESS"/>
 </recyclebin:RecycleBin>
